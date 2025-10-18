@@ -5,7 +5,7 @@ export const seedEventos: Evento[] = [
   {
     id: uid(),
     titulo: "Mostra de Bandas Locais",
-    descricao: "Apresentação de artistas independentes de Santa Helena.",
+    descricao: "Apresentação de artistas independentes de Rio Verde.",
     dataInicio: new Date(Date.now() + 24 * 3600 * 1000).toISOString(),
     dataFim: new Date(Date.now() + 24 * 3600 * 1000 + 2 * 3600 * 1000).toISOString(),
     local: "Praça Central",
@@ -28,7 +28,7 @@ export const seedEventos: Evento[] = [
   },
   {
     id: uid(),
-    titulo: "Exposição: Memórias de Santa Helena",
+    titulo: "Exposição: Memórias de Rio Verde",
     descricao: "Acervo fotográfico e objetos históricos da cidade.",
     dataInicio: new Date(Date.now() + 5 * 24 * 3600 * 1000).toISOString(),
     dataFim: new Date(Date.now() + 12 * 24 * 3600 * 1000).toISOString(),
