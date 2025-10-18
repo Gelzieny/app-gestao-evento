@@ -1,21 +1,21 @@
 "use client"
 
-import { Plus, Edit, Trash2 } from "lucide-react";
+import { Edit, Trash2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import type { Evento } from "./types/evento";
+import { Agenda } from "./components/agenda";
+import { Painel } from "./components/painel";
+import { Badge } from "./components/ui/badge";
 import { formatDateRange } from "./utils/list";
 import { Button } from "./components/ui/button";
 import { seedEventos } from "./data/seed_eventos";
 import { FormEvento } from "./components/form_evento";
 import { BarraFiltro } from "./components/barra_filtro";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs";
-import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "./components/ui/dialog";
 import { Card, CardContent, CardHeader, CardTitle } from "./components/ui/card";
-import { Badge } from "./components/ui/badge";
-import { Agenda } from "./components/agenda";
-import { Painel } from "./components/painel";
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "./components/ui/dialog";
 
 const STORAGE_KEY = "prototipo-eventos-santa-helena";
 

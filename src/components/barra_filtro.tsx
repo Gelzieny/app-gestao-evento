@@ -1,6 +1,7 @@
 import { Input } from "@/components/ui/input";
-import { Filter, Search, Tag } from "lucide-react";
+
 import { motion } from "framer-motion";
+import { Filter, Search, Tag } from "lucide-react";
 
 interface BarraFiltroProps {
   query: string;

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
+import { uid } from "@/utils/uid";
+import type { Evento } from "@/types/evento";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { uid } from "@/utils/uid";
-import type { Evento } from "@/types/evento";
 
 interface FormEventoProps {
   evento?: Evento;

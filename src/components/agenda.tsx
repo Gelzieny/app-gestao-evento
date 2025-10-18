@@ -1,5 +1,6 @@
-import { CalendarIcon, MapPin, Clock } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { CalendarIcon, MapPin, Clock } from "lucide-react";
+
 import { Badge } from "@/components/ui/badge";
 
 interface Evento {
