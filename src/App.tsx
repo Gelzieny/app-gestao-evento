@@ -80,7 +80,7 @@ export default function App() {
       <div className="mx-auto max-w-7xl">
         <header className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Gestão de Eventos Culturais • Santa Helena</h1>
+            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Gestão de Eventos Culturais • Rio Verde/GO</h1>
             <p className="text-slate-600">Protótipo navegável para a Secretaria Municipal de Cultura.</p>
           </div>
           <Dialog open={modalAberto} onOpenChange={setModalAberto}>
