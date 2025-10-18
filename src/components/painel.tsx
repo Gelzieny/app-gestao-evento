@@ -28,8 +28,8 @@ export function Painel({ eventos }: PainelProps) {
   const [query, setQuery] = useState("");
   const [categoria, setCategoria] = useState("todas");
   const [tagFiltro, setTagFiltro] = useState(""); // ✅ alterado de string[] para string
-  const [modalAberto, setModalAberto] = useState(false);
-  const [edicao, setEdicao] = useState<Evento | null>(null);
+  const [, setModalAberto] = useState(false);
+  const [, setEdicao] = useState<Evento | null>(null);
 
   const todasTags = Array.from(new Set(eventos.flatMap((e) => e.tags)));
 
