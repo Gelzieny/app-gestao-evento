@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+<h1 align="center">🎭 Gestão de Eventos Culturais – Rio Verde/GO</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="justify">
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O sistema **Gestão de Eventos Culturais – Rio Verde/GO** é um protótipo de aplicação web voltado à **gestão de atividades culturais municipais**.  
+A solução possibilita **criar, editar e excluir eventos**, visualizar uma **agenda interativa** e acompanhar **indicadores no painel administrativo**, tudo dentro de uma interface moderna construída com **React, Tailwind CSS e shadcn/ui**.
 
-## React Compiler
+O projeto foi desenvolvido como parte de uma iniciativa de **extensão universitária** com foco na aplicação de práticas de engenharia de software, interface responsiva e uso de tecnologias modernas de front-end.
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Preview do Projeto
 
-## Expanding the ESLint configuration
+<p align="center">
+  <img src=".github/img/home.png" alt="Home do projeto" width="400"/>
+  <img src=".github/img/form.png" alt="Formulário de Evento" width="400"/>
+</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧩 Funcionalidades
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- ✅ **Cadastro de eventos** com título, descrição, local, categoria, data e tags  
+- ✏️ **Edição e exclusão** de eventos existentes  
+- 📅 **Visualização por agenda** (eventos agrupados por dia)  
+- 📊 **Painel de controle** com métricas e estatísticas  
+- 🔍 **Busca e filtros** por nome, categoria e tags  
+- 💾 **Armazenamento local (localStorage)** – sem necessidade de backend  
+- 💡 Interface **intuitiva, responsiva e acessível**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Tecnologias Utilizadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- [Vite](https://vitejs.dev/): Ferramenta de build rápida para projetos React.
+- [React](https://react.dev/): Biblioteca JavaScript para construção de interfaces de usuário.
+- [Tailwind CSS](https://tailwindcss.com/): Framework de estilização utilitária para desenvolvimento rápido.
+- [shadcn/ui](https://ui.shadcn.com/): Biblioteca de componentes de interface pré-construídos com Tailwind CSS.
+- [Framer Motion](https://www.framer.com/motion/): Biblioteca de animações para React.
+- [Lucide Icons](https://lucide.dev/): Biblioteca de ícones vetoriais para React.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Como executar o projeto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Pré-requisitos
+
+<p align="justify">Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:</p>
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=git,nodejs,vite,vscode" />
+</a>
+
+# 🧑🏻‍💻 Autor
+
+Feito com ❤️ por Gelzieny R. Martins 👋🏽 [Entre em contato!](https://www.linkedin.com/in/gelzieny-r-martins-180551106/)
